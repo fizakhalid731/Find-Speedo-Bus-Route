@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a57563e1c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="backgroundimage">
+      <div class="mainbody">
+        <div class="container">
+          <img src="logo.png" alt="logo" class="logo" />
+          <p class="text">Plan your route with Speedo Bus easily.</p>
+          <div class="main">
+            <label for="from-station">From:</label>
+            <select id="from-station" onchange="dropdownlist()">
+              <option selected disabled>Select station</option>
+              <option value="Railway Station">Railway Station</option>
+              <option value="Ek Moriya">Ek Moriya</option>
+              <option value="Nawaz Sharif Hospital">
+                Nawaz Sharif Hospital
+              </option>
+              <option value="Kashmiri Gate">Kashmiri Gate</option>
+              <option value="Lari Adda">Lari Adda</option>
+              <option value="Azadi Chowk">Azadi Chowk</option>
+              <option value="Texali Chowk">Texali Chowk</option>
+              <option value="Bhatti Chowk">Bhatti Chowk</option>
+              <option value="Samanabad Morr">Samanabad Morr</option>
+              <option value="Corporation Chowk">Corporation Chowk</option>
+              <option value="Taj Company">Taj Company</option>
+              <option value="Sanda">Sanda</option>
+              <option value="Double Sarkan">Double Sarkan</option>
+              <option value="Moon Market">Moon Market</option>
+              <option value="Ganda Nala">Ganda Nala</option>
+              <option value="Timber Market">Timber Market</option>
+              <option value="METRO">METRO</option>
+              <option value="Niazi Chowk">Niazi Chowk</option>
+              <option value="Shahdara Metro Station">
+                Shahdara Metro Station
+              </option>
+              <option value="Shahdara Lari Adda">Shahdara Lari Adda</option>
+              <option value="R.A Bazar">R.A Bazar</option>
+              <option value="Nadeem Chowk">Nadeem Chowk</option>
+              <option value="Defence Morr">Defence Morr</option>
+              <option value="Shareef Market">Shareef Market</option>
+              <option value="Walton">Walton</option>
+              <option value="Qainchi">Qainchi</option>
+              <option value="Ghazi Chowk">Ghazi Chowk</option>
+              <option value="Chungi Amar Sidhu">Chungi Amar Sidhu</option>
+              <option value="Shad Bagh Underpass">Shad Bagh Underpass</option>
+              <option value="Rajput Park">Rajput Park</option>
+              <option value="Madina Chowk">Madina Chowk</option>
+              <option value="Lohay Wali Pulley">Lohay Wali Pulley</option>
+              <option value="Badami Bagh">Badami Bagh</option>
+              <option value="Lari Adda Gol Chakar">Lari Adda Gol Chakar</option>
+              <option value="Babu Sabu">Babu Sabu</option>
+              <option value="Niazi Adda">Niazi Adda</option>
+              <option value="City Bus Stand">City Bus Stand</option>
+              <option value="Chowk Yateem Khana">Chowk Yateem Khana</option>
+              <option value="Bhala Stop">Bhala Stop</option>
+              <option value="Chauburji">Chauburji</option>
+              <option value="Riwaz Garden">Riwaz Garden</option>
+              <option value="M.A.O College">M.A.O College</option>
+              <option value="Firdous Cinema">Firdous Cinema</option>
+              <option value="Raj Garh Chowk">Raj Garh Chowk</option>
+              <option value="Bagrian">Bagrian</option>
+              <option value="Depot Chowk">Depot Chowk</option>
+              <option value="Minhaj University">Minhaj University</option>
+              <option value="Hamdard Chowk">Hamdard Chowk</option>
+              <option value="Rehmat Eye Hospital">Rehmat Eye Hospital</option>
+              <option value="Pindi Stop">Pindi Stop</option>
+              <option value="Peco Morr">Peco Morr</option>
+              <option value="Kot Lakhpat Railway Station">
+                Kot Lakhpat Railway Station
+              </option>
+              <option value="Phatak Mandi">Phatak Mandi</option>
+              <option value="Doctor Hospital">Doctor Hospital</option>
+              <option value="Wafaqi Colony">Wafaqi Colony</option>
+              <option value="IBA Stop">IBA Stop</option>
+              <option value="Hailey College">Hailey College</option>
+              <option value="Campus Pull">Campus Pull</option>
+              <option value="Barkat Market">Barkat Market</option>
+              <option value="Kalma Chowk">Kalma Chowk</option>
+              <option value="Qaddafi Stadium">Qaddafi Stadium</option>
+              <option value="Canal">Canal</option>
+              <option value="Haji Camp">Haji Camp</option>
+              <option value="Shimla Pahari">Shimla Pahari</option>
+              <option value="Lahore Zoo">Lahore Zoo</option>
+              <option value="Chairing Cross">Chairing Cross</option>
+              <option value="Ganga Ram Hospital">Ganga Ram Hospital</option>
+              <option value="Qartaba Chowk">Qartaba Chowk</option>
+              <option value="Sham Nagar">Sham Nagar</option>
+              <option value="Multan Chungi">Multan Chungi</option>
+              <option value="Mustafa Town">Mustafa Town</option>
+              <option value="Karim Block Market">Karim Block Market</option>
+              <option value="PU Examination Center">
+                PU Examination Center
+              </option>
+              <option value="Bhekewal Morr">Bhekewal Morr</option>
+              <option value="Wahdat Colony">Wahdat Colony</option>
+              <option value="Naqsha Stop">Naqsha Stop</option>
+              <option value="Ichra">Ichra</option>
+              <option value="Shama">Shama</option>
+              <option value="Scheme Morr">Scheme Morr</option>
+              <option value="Flat Stop">Flat Stop</option>
+              <option value="Dubai Chowk">Dubai Chowk</option>
+              <option value="Sheikh Zaid Hospital">Sheikh Zaid Hospital</option>
+              <option value="Liberty Chowk">Liberty Chowk</option>
+              <option value="Hafeez Center">Hafeez Center</option>
+              <option value="Mini Market">Mini Market</option>
+              <option value="Main Market, Gulberg">Main Market, Gulberg</option>
+              <option value="PAF Market">PAF Market</option>
+              <option value="Girja Chowk">Girja Chowk</option>
+              <option value="Afshan Chowk">Afshan Chowk</option>
+              <option value="Fortress Stadium">Fortress Stadium</option>
+              <option value="Gymkhana">Gymkhana</option>
+              <option value="Aitchison College">Aitchison College</option>
+              <option value="PC Hotel">PC Hotel</option>
+              <option value="GPO">GPO</option>
+              <option value="Anarkali">Anarkali</option>
+              <option value="Civil Secretariat">Civil Secretariat</option>
+              <option value="UMT Stop">UMT Stop</option>
+              <option value="Khokhar Chowk">Khokhar Chowk</option>
+              <option value="Akbar Chowk">Akbar Chowk</option>
+              <option value="Ittefaq Hospital">Ittefaq Hospital</option>
+              <option value="Model Town">Model Town</option>
+              <option value="Fauji Foundation">Fauji Foundation</option>
+              <option value="Ali View Garden">Ali View Garden</option>
+              <option value="Bhatta Chowk">Bhatta Chowk</option>
+              <option value="DHA Nursery">DHA Nursery</option>
+              <option value="LESCO">LESCO</option>
+              <option value="Chota Ishara Stop">Chota Ishara Stop</option>
+              <option value="Naka Stop">Naka Stop</option>
+              <option value="Qartba Chowk">Qartba Chowk</option>
+              <option value="Hakeem M. Ajmal Khan Road">
+                Hakeem M. Ajmal Khan Road
+              </option>
+              <option value="Gulshan Ravi Road">Gulshan Ravi Road</option>
+              <option value="Kacha Ferozepur Road">Kacha Ferozepur Road</option>
+              <option value="Circular Road">Circular Road</option>
+              <option value="Main Boulevard Shadman">
+                Main Boulevard Shadman
+              </option>
+              <option value="Davis Road">Davis Road</option>
+              <option value="Nisbat Road">Nisbat Road</option>
+              <option value="Abbot Road">Abbot Road</option>
+              <option value="Main Market">Main Market</option>
+              <option value="Jail Road">Jail Road</option>
+              <option value="Lytton Road">Lytton Road</option>
+              <option value="Crust Road">Crust Road</option>
+              <option value="Lower Mall Road">Lower Mall Road</option>
+              <option value="Jain Mandar">Jain Mandar</option>
+              <option value="Al-Mumtaz Road">Al-Mumtaz Road</option>
+              <option value="Poonch Road">Poonch Road</option>
+              <option value="Lake Road">Lake Road</option>
+              <option value="Madar-e-Millat Road">Madar-e-Millat Road</option>
+              <option value="Ali Road">Ali Road</option>
+              <option value="Baig Road">Baig Road</option>
+              <option value="Canal Bank Road">Canal Bank Road</option>
+              <option value="Thokar Niaz Baig">Thokar Niaz Baig</option>
+              <option value="Valencia">Valencia</option>
+              <option value="Valencia Main Boulevard">
+                Valencia Main Boulevard
+              </option>
+              <option value="Khayaban-e-Jinnah">Khayaban-e-Jinnah</option>
+              <option value="Raiwind Road">Raiwind Road</option>
+              <option value="College Road">College Road</option>
+              <option value="Maulana Shaukat Ali Road">
+                Maulana Shaukat Ali Road
+              </option>
+              <option value="Wahdat Road">Wahdat Road</option>
+              <option value="Lahore-Bedian Road">Lahore-Bedian Road</option>
+              <option value="Allama Iqbal Road">Allama Iqbal Road</option>
+              <option value="G.T Road">G.T Road</option>
+              <option value="Shalimar Link Road">Shalimar Link Road</option>
+              <option value="Tufail Road">Tufail Road</option>
+              <option value="Sarfraz Rafique Road">Sarfraz Rafique Road</option>
+              <option value="Daroghawala">Daroghawala</option>
+              <option value="BataPur">BataPur</option>
+              <option value="Quaid e Azam Interchange">
+                Quaid e Azam Interchange
+              </option>
+              <option value="Harbanspura Road">Harbanspura Road</option>
+              <option value="Zarar Shaheed Road">Zarar Shaheed Road</option>
+              <option value="Airport">Airport</option>
+              <option value="Niazi Interchange">Niazi Interchange</option>
+              <option value="Lahore Ring Road">Lahore Ring Road</option>
+              <option value="Band Road">Band Road</option>
+              <option value="Sue Wala Road">Sue Wala Road</option>
+              <option value="Salamat Pura">Salamat Pura</option>
+              <option value="Chamra Mandi">Chamra Mandi</option>
+              <option value="Cooper Store">Cooper Store</option>
+              <option value="UET">UET</option>
+              <option value="Shalimar Chowk">Shalimar Chowk</option>
+              <option value="Durand Road">Durand Road</option>
+              <option value="Queen Mary Road">Queen Mary Road</option>
+              <option value="Garhi Shahu Bridge">Garhi Shahu Bridge</option>
+              <option value="Workshop Road">Workshop Road</option>
+              <option value="Mughalpura Road">Mughalpura Road</option>
+              <option value="Mughalpura">Mughalpura</option>
+              <option value="Singhpura">Singhpura</option>
+              <option value="Wheatman Road">Wheatman Road</option>
+              <option value="Griffin Road">Griffin Road</option>
+            </select>
+
+            <!-- /////////////////////////////////////////////////////////////////// -->
+
+            <label for="to-station">To:</label>
+            <select id="to-station" onchange="dropdownlist()">
+              <option selected disabled>Select station</option>
+              <option value="Railway Station">Railway Station</option>
+              <option value="Ek Moriya">Ek Moriya</option>
+              <option value="Nawaz Sharif Hospital">
+                Nawaz Sharif Hospital
+              </option>
+              <option value="Kashmiri Gate">Kashmiri Gate</option>
+              <option value="Lari Adda">Lari Adda</option>
+              <option value="Azadi Chowk">Azadi Chowk</option>
+              <option value="Texali Chowk">Texali Chowk</option>
+              <option value="Bhatti Chowk">Bhatti Chowk</option>
+              <option value="Samanabad Morr">Samanabad Morr</option>
+              <option value="Corporation Chowk">Corporation Chowk</option>
+              <option value="Taj Company">Taj Company</option>
+              <option value="Sanda">Sanda</option>
+              <option value="Double Sarkan">Double Sarkan</option>
+              <option value="Moon Market">Moon Market</option>
+              <option value="Ganda Nala">Ganda Nala</option>
+              <option value="Timber Market">Timber Market</option>
+              <option value="METRO">METRO</option>
+              <option value="Niazi Chowk">Niazi Chowk</option>
+              <option value="Shahdara Metro Station">
+                Shahdara Metro Station
+              </option>
+              <option value="Shahdara Lari Adda">Shahdara Lari Adda</option>
+              <option value="R.A Bazar">R.A Bazar</option>
+              <option value="Nadeem Chowk">Nadeem Chowk</option>
+              <option value="Defence Morr">Defence Morr</option>
+              <option value="Shareef Market">Shareef Market</option>
+              <option value="Walton">Walton</option>
+              <option value="Qainchi">Qainchi</option>
+              <option value="Ghazi Chowk">Ghazi Chowk</option>
+              <option value="Chungi Amar Sidhu">Chungi Amar Sidhu</option>
+              <option value="Shad Bagh Underpass">Shad Bagh Underpass</option>
+              <option value="Rajput Park">Rajput Park</option>
+              <option value="Madina Chowk">Madina Chowk</option>
+              <option value="Lohay Wali Pulley">Lohay Wali Pulley</option>
+              <option value="Badami Bagh">Badami Bagh</option>
+              <option value="Lari Adda Gol Chakar">Lari Adda Gol Chakar</option>
+              <option value="Babu Sabu">Babu Sabu</option>
+              <option value="Niazi Adda">Niazi Adda</option>
+              <option value="City Bus Stand">City Bus Stand</option>
+              <option value="Chowk Yateem Khana">Chowk Yateem Khana</option>
+              <option value="Bhala Stop">Bhala Stop</option>
+              <option value="Chauburji">Chauburji</option>
+              <option value="Riwaz Garden">Riwaz Garden</option>
+              <option value="M.A.O College">M.A.O College</option>
+              <option value="Firdous Cinema">Firdous Cinema</option>
+              <option value="Raj Garh Chowk">Raj Garh Chowk</option>
+              <option value="Bagrian">Bagrian</option>
+              <option value="Depot Chowk">Depot Chowk</option>
+              <option value="Minhaj University">Minhaj University</option>
+              <option value="Hamdard Chowk">Hamdard Chowk</option>
+              <option value="Rehmat Eye Hospital">Rehmat Eye Hospital</option>
+              <option value="Pindi Stop">Pindi Stop</option>
+              <option value="Peco Morr">Peco Morr</option>
+              <option value="Kot Lakhpat Railway Station">
+                Kot Lakhpat Railway Station
+              </option>
+              <option value="Phatak Mandi">Phatak Mandi</option>
+              <option value="Doctor Hospital">Doctor Hospital</option>
+              <option value="Wafaqi Colony">Wafaqi Colony</option>
+              <option value="IBA Stop">IBA Stop</option>
+              <option value="Hailey College">Hailey College</option>
+              <option value="Campus Pull">Campus Pull</option>
+              <option value="Barkat Market">Barkat Market</option>
+              <option value="Kalma Chowk">Kalma Chowk</option>
+              <option value="Qaddafi Stadium">Qaddafi Stadium</option>
+              <option value="Canal">Canal</option>
+              <option value="Haji Camp">Haji Camp</option>
+              <option value="Shimla Pahari">Shimla Pahari</option>
+              <option value="Lahore Zoo">Lahore Zoo</option>
+              <option value="Chairing Cross">Chairing Cross</option>
+              <option value="Ganga Ram Hospital">Ganga Ram Hospital</option>
+              <option value="Qartaba Chowk">Qartaba Chowk</option>
+              <option value="Sham Nagar">Sham Nagar</option>
+              <option value="Multan Chungi">Multan Chungi</option>
+              <option value="Mustafa Town">Mustafa Town</option>
+              <option value="Karim Block Market">Karim Block Market</option>
+              <option value="PU Examination Center">
+                PU Examination Center
+              </option>
+              <option value="Bhekewal Morr">Bhekewal Morr</option>
+              <option value="Wahdat Colony">Wahdat Colony</option>
+              <option value="Naqsha Stop">Naqsha Stop</option>
+              <option value="Ichra">Ichra</option>
+              <option value="Shama">Shama</option>
+              <option value="Scheme Morr">Scheme Morr</option>
+              <option value="Flat Stop">Flat Stop</option>
+              <option value="Dubai Chowk">Dubai Chowk</option>
+              <option value="Sheikh Zaid Hospital">Sheikh Zaid Hospital</option>
+              <option value="Liberty Chowk">Liberty Chowk</option>
+              <option value="Hafeez Center">Hafeez Center</option>
+              <option value="Mini Market">Mini Market</option>
+              <option value="Main Market, Gulberg">Main Market, Gulberg</option>
+              <option value="PAF Market">PAF Market</option>
+              <option value="Girja Chowk">Girja Chowk</option>
+              <option value="Afshan Chowk">Afshan Chowk</option>
+              <option value="Fortress Stadium">Fortress Stadium</option>
+              <option value="Gymkhana">Gymkhana</option>
+              <option value="Aitchison College">Aitchison College</option>
+              <option value="PC Hotel">PC Hotel</option>
+              <option value="GPO">GPO</option>
+              <option value="Anarkali">Anarkali</option>
+              <option value="Civil Secretariat">Civil Secretariat</option>
+              <option value="UMT Stop">UMT Stop</option>
+              <option value="Khokhar Chowk">Khokhar Chowk</option>
+              <option value="Akbar Chowk">Akbar Chowk</option>
+              <option value="Ittefaq Hospital">Ittefaq Hospital</option>
+              <option value="Model Town">Model Town</option>
+              <option value="Fauji Foundation">Fauji Foundation</option>
+              <option value="Ali View Garden">Ali View Garden</option>
+              <option value="Bhatta Chowk">Bhatta Chowk</option>
+              <option value="DHA Nursery">DHA Nursery</option>
+              <option value="LESCO">LESCO</option>
+              <option value="Chota Ishara Stop">Chota Ishara Stop</option>
+              <option value="Naka Stop">Naka Stop</option>
+              <option value="Qartba Chowk">Qartba Chowk</option>
+              <option value="Hakeem M. Ajmal Khan Road">
+                Hakeem M. Ajmal Khan Road
+              </option>
+              <option value="Gulshan Ravi Road">Gulshan Ravi Road</option>
+              <option value="Kacha Ferozepur Road">Kacha Ferozepur Road</option>
+              <option value="Circular Road">Circular Road</option>
+              <option value="Main Boulevard Shadman">
+                Main Boulevard Shadman
+              </option>
+              <option value="Davis Road">Davis Road</option>
+              <option value="Nisbat Road">Nisbat Road</option>
+              <option value="Abbot Road">Abbot Road</option>
+              <option value="Main Market">Main Market</option>
+              <option value="Jail Road">Jail Road</option>
+              <option value="Lytton Road">Lytton Road</option>
+              <option value="Crust Road">Crust Road</option>
+              <option value="Lower Mall Road">Lower Mall Road</option>
+              <option value="Jain Mandar">Jain Mandar</option>
+              <option value="Al-Mumtaz Road">Al-Mumtaz Road</option>
+              <option value="Poonch Road">Poonch Road</option>
+              <option value="Lake Road">Lake Road</option>
+              <option value="Madar-e-Millat Road">Madar-e-Millat Road</option>
+              <option value="Ali Road">Ali Road</option>
+              <option value="Baig Road">Baig Road</option>
+              <option value="Canal Bank Road">Canal Bank Road</option>
+              <option value="Thokar Niaz Baig">Thokar Niaz Baig</option>
+              <option value="Valencia">Valencia</option>
+              <option value="Valencia Main Boulevard">
+                Valencia Main Boulevard
+              </option>
+              <option value="Khayaban-e-Jinnah">Khayaban-e-Jinnah</option>
+              <option value="Raiwind Road">Raiwind Road</option>
+              <option value="College Road">College Road</option>
+              <option value="Maulana Shaukat Ali Road">
+                Maulana Shaukat Ali Road
+              </option>
+              <option value="Wahdat Road">Wahdat Road</option>
+              <option value="Lahore-Bedian Road">Lahore-Bedian Road</option>
+              <option value="Allama Iqbal Road">Allama Iqbal Road</option>
+              <option value="G.T Road">G.T Road</option>
+              <option value="Shalimar Link Road">Shalimar Link Road</option>
+              <option value="Tufail Road">Tufail Road</option>
+              <option value="Sarfraz Rafique Road">Sarfraz Rafique Road</option>
+              <option value="Daroghawala">Daroghawala</option>
+              <option value="BataPur">BataPur</option>
+              <option value="Quaid e Azam Interchange">
+                Quaid e Azam Interchange
+              </option>
+              <option value="Harbanspura Road">Harbanspura Road</option>
+              <option value="Zarar Shaheed Road">Zarar Shaheed Road</option>
+              <option value="Airport">Airport</option>
+              <option value="Niazi Interchange">Niazi Interchange</option>
+              <option value="Lahore Ring Road">Lahore Ring Road</option>
+              <option value="Band Road">Band Road</option>
+              <option value="Sue Wala Road">Sue Wala Road</option>
+              <option value="Salamat Pura">Salamat Pura</option>
+              <option value="Chamra Mandi">Chamra Mandi</option>
+              <option value="Cooper Store">Cooper Store</option>
+              <option value="UET">UET</option>
+              <option value="Shalimar Chowk">Shalimar Chowk</option>
+              <option value="Durand Road">Durand Road</option>
+              <option value="Queen Mary Road">Queen Mary Road</option>
+              <option value="Garhi Shahu Bridge">Garhi Shahu Bridge</option>
+              <option value="Workshop Road">Workshop Road</option>
+              <option value="Mughalpura Road">Mughalpura Road</option>
+              <option value="Mughalpura">Mughalpura</option>
+              <option value="Singhpura">Singhpura</option>
+              <option value="Wheatman Road">Wheatman Road</option>
+              <option value="Griffin Road">Griffin Road</option>
+            </select>
+
+            <button
+              id="linear-search-button"
+              onclick="show_Route_with_linear_search()"
+            >
+              Search
+            </button>
+
+            <div id="result" class="results"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
